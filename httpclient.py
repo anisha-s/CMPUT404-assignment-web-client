@@ -143,7 +143,7 @@ class HTTPClient(object):
         #print("code   ", code)
         body = self.get_body(data)
         self.close()
-        # print(body)
+        print(body)
         return HTTPResponse(code, body)
 
     def command(self, url, command="GET", args=None):
